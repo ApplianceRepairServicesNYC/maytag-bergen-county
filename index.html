@@ -335,8 +335,8 @@
         .borough-map-section h2 { font-size: 32px; text-align: center; color: var(--blue); margin-bottom: 10px; }
         .borough-map-section > p { font-size: 16px; text-align: center; color: #555; margin-bottom: 30px; }
         .borough-cards-grid {
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
-            max-width: 900px; margin: 0 auto;
+            display: flex; justify-content: center; gap: 20px;
+            max-width: 900px; margin: 0 auto; flex-wrap: wrap;
         }
         @media (max-width: 600px) { .borough-cards-grid { grid-template-columns: 1fr; } }
         .borough-card {
@@ -643,76 +643,76 @@
                         
                         <li class="submenu-toggle" id="serviceAreasToggle">Service Areas</li>
                         <div class="service-areas-submenu" id="serviceAreasSubmenu">
-                            <li><a href="https://maytagbergencounty.com/nj/allendale/">Allendale</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/alpine/">Alpine</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/bergenfield/">Bergenfield</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/bogota/">Bogota</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/carlstadt/">Carlstadt</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/cliffside-park/">Cliffside Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/closter/">Closter</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/cresskill/">Cresskill</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/demarest/">Demarest</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/dumont/">Dumont</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/east-rutherford/">East Rutherford</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/edgewater/">Edgewater</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/elmwood-park/">Elmwood Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/emerson/">Emerson</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/englewood/">Englewood</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/englewood-cliffs/">Englewood Cliffs</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/fair-lawn/">Fair Lawn</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/fairview/">Fairview</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/fort-lee/">Fort Lee</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/franklin-lakes/">Franklin Lakes</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/garfield/">Garfield</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/glen-rock/">Glen Rock</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/hackensack/">Hackensack</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/harrington-park/">Harrington Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/hasbrouck-heights/">Hasbrouck Heights</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/haworth/">Haworth</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/hillsdale/">Hillsdale</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/ho-ho-kus/">Ho-Ho-Kus</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/leonia/">Leonia</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/little-ferry/">Little Ferry</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/lodi/">Lodi</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/lyndhurst/">Lyndhurst</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/mahwah/">Mahwah</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/maywood/">Maywood</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/midland-park/">Midland Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/montvale/">Montvale</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/moonachie/">Moonachie</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/new-milford/">New Milford</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/north-arlington/">North Arlington</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/northvale/">Northvale</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/norwood/">Norwood</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/oakland/">Oakland</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/old-tappan/">Old Tappan</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/oradell/">Oradell</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/palisades-park/">Palisades Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/paramus/">Paramus</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/park-ridge/">Park Ridge</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/ramsey/">Ramsey</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/ridgefield/">Ridgefield</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/ridgefield-park/">Ridgefield Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/ridgewood/">Ridgewood</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/river-edge/">River Edge</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/river-vale/">River Vale</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/rochelle-park/">Rochelle Park</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/rockleigh/">Rockleigh</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/rutherford/">Rutherford</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/saddle-brook/">Saddle Brook</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/saddle-river/">Saddle River</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/south-hackensack/">South Hackensack</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/teaneck/">Teaneck</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/tenafly/">Tenafly</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/teterboro/">Teterboro</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/upper-saddle-river/">Upper Saddle River</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/waldwick/">Waldwick</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/wallington/">Wallington</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/washington-township/">Washington Township</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/westwood/">Westwood</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/woodcliff-lake/">Woodcliff Lake</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/wood-ridge/">Wood-Ridge</a></li>
-                            <li><a href="https://maytagbergencounty.com/nj/wyckoff/">Wyckoff</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Allendale</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Alpine</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Bergenfield</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Bogota</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Carlstadt</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Cliffside Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Closter</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Cresskill</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Demarest</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Dumont</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">East Rutherford</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Edgewater</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Elmwood Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Emerson</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Englewood</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Englewood Cliffs</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Fair Lawn</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Fairview</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Fort Lee</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Franklin Lakes</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Garfield</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Glen Rock</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Hackensack</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Harrington Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Hasbrouck Heights</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Haworth</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Hillsdale</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Ho-Ho-Kus</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Leonia</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Little Ferry</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Lodi</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Lyndhurst</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Mahwah</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Maywood</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Midland Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Montvale</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Moonachie</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">New Milford</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">North Arlington</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Northvale</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Norwood</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Oakland</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Old Tappan</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Oradell</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Palisades Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Paramus</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Park Ridge</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Ramsey</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Ridgefield</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Ridgefield Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Ridgewood</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">River Edge</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">River Vale</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Rochelle Park</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Rockleigh</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Rutherford</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Saddle Brook</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Saddle River</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">South Hackensack</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Teaneck</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Tenafly</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Teterboro</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Upper Saddle River</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Waldwick</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Wallington</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Washington Township</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Westwood</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Woodcliff Lake</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Wood-Ridge</a></li>
+                            <li><a href="#sa-service-areas" class="scroll-link">Wyckoff</a></li>
                         </div>
                     </ul>
                 </div>
