@@ -1651,7 +1651,7 @@
             var saPrevBtn = document.getElementById('saPrevBtn');
             var saNextBtn = document.getElementById('saNextBtn');
             var currentSlide = 0;
-            var totalSlides = 4;
+            var totalSlides = 1;
             
             if (saToggleBtn) saToggleBtn.addEventListener('click', function() {
                 var isOpen = saDropdownContent.style.maxHeight && saDropdownContent.style.maxHeight !== '0px';
@@ -1665,12 +1665,15 @@
             });
             
             function updateSlider() {
+                if (!saSliderContainer) return;
                 var slides = saSliderContainer.querySelectorAll('.sa-slide');
                 slides.forEach(function(slide, i) { slide.style.display = i === currentSlide ? 'block' : 'none'; });
-                var tabs = saBoroughTabs.querySelectorAll('.sa-borough-tab');
-                tabs.forEach(function(tab, i) { tab.classList.toggle('active', i === currentSlide); });
-                saPrevBtn.disabled = currentSlide === 0;
-                saNextBtn.disabled = currentSlide === totalSlides - 1;
+                if (saBoroughTabs) {
+                    var tabs = saBoroughTabs.querySelectorAll('.sa-borough-tab');
+                    tabs.forEach(function(tab, i) { tab.classList.toggle('active', i === currentSlide); });
+                }
+                if (saPrevBtn) saPrevBtn.disabled = currentSlide === 0;
+                if (saNextBtn) saNextBtn.disabled = currentSlide === totalSlides - 1;
             }
             
             if (saPrevBtn) saPrevBtn.addEventListener('click', function() { if (currentSlide > 0) { currentSlide--; updateSlider(); } });
